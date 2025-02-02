@@ -56,12 +56,25 @@ const HeroSection = () => {
             </ul>
           </div>
 
-          <div className="mt-10 mb-10">
+          <div className="mt-10 mb-10 flex flex-col items-center justify-center">
             <p className="text-white">We're part of</p>
-            <div>
-              <img src="/aws-startups.png" alt="amazon" className="" />
-              <img src="" alt="amazon" />
-              <img src="" alt="amazon" />
+
+            <div className="flex items-center justify-center gap-5 mt-7">
+              <img
+                src="https://www.quansys.ai/wp-content/uploads/2024/12/00.png"
+                alt="amazon"
+                className="w-44 "
+              />
+              <img
+                src="https://www.quansys.ai/wp-content/uploads/2024/12/11-1.png"
+                alt="amazon"
+                className="w-44 "
+              />
+              <img
+                src="https://www.quansys.ai/wp-content/uploads/2024/12/33.png"
+                alt="amazon"
+                className="w-44"
+              />
             </div>
           </div>
         </div>
