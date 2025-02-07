@@ -1,10 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
-*{
+
+
+body{
+ 
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    
+  }
+
+@theme{
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-fade-in: fade-in 2s ease-in-out ;
+  --animate-loop-scroll: loop-scroll 10s linear infinite;
+  --breakpoint-lg: 1025px
 }
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(3deg);
   }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+ 
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+   
+  }
+}
+
+@keyframes loop-scroll {
+  from{transform: translateX(0)};
+  to{transform: translate(-100%)}
+}
+
+
+
