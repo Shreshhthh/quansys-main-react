@@ -35,42 +35,42 @@ const HeroSection = () => {
                 <img
                   src="https://quansys.ai/wp-content/uploads/2024/12/1.png"
                   alt="marg"
-                  className="hover:scale-105"
+                  className="opacity-65 hover:opacity-100"
                 />
               </li>
               <li>
                 <img
                   src="https://quansys.ai/wp-content/uploads/2024/12/2.png"
                   alt="payzcare"
-                  className="hover:scale-105"
+                  className="opacity-65 hover:opacity-100"
                 />
               </li>
               <li>
                 <img
                   src="https://quansys.ai/wp-content/uploads/2024/12/3.png"
                   alt="ayushpay"
-                  className="hover:scale-105"
+                  className="opacity-65 hover:opacity-100"
                 />
               </li>
               <li>
                 <img
                   src="https://quansys.ai/wp-content/uploads/2024/12/4.png"
                   alt="intargos"
-                  className="hover:scale-105"
+                  className="opacity-65 hover:opacity-100"
                 />
               </li>
               <li>
                 <img
                   src="https://quansys.ai/wp-content/uploads/2024/12/6.png"
                   alt="omelo"
-                  className="hover:scale-105"
+                  className="opacity-65 hover:opacity-100"
                 />
               </li>
               <li>
                 <img
                   src="	https://quansys.ai/wp-content/uploads/2024/12/5-1.png"
                   alt="7stone"
-                  className="hover:scale-105"
+                  className="opacity-65 hover:opacity-100"
                 />
               </li>
             </ul>
@@ -84,6 +84,7 @@ const HeroSection = () => {
               data-aos="fade-left"
               data-aos-duration="2000"
               data-aos-mirror="true"
+              data-aos-offset="20"
             >
               <img
                 src="https://www.quansys.ai/wp-content/uploads/2024/12/00.png"

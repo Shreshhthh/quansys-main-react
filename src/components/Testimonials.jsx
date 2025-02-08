@@ -29,9 +29,9 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-4 shadow-lg flex flex-col justify-center gap-4 hover:rotate-2 "
+              className="bg-white rounded-2xl p-4 shadow-lg flex flex-col justify-center gap-4 "
               data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
-              data-aos-duration="3000"
+              data-aos-duration="1500"
               data-aos-mirror="true"
             >
               {/* Quote mark */}
@@ -71,7 +71,7 @@ const Testimonials = () => {
                 {/* Testimonial content */}
                 <div
                   className="max-w-90 p-5 ml-20 flex flex-col items-end"
-                  data-aos="fade-up"
+                  data-aos="zoom-out"
                   data-aos-duration="2000"
                 >
                   <p className="text-gray-600 lg:text-lg mb-8 leading-relaxed text-center ">

@@ -28,7 +28,7 @@ const Features = () => {
       <div
         className="bg-black rounded-3xl p-12 max-w-7xl mx-auto w-[90%] lg:w-[70%]"
         data-aos="flip-up"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos-mirror="true"
       >
         <h2 className="text-white text-3xl lg:text-4xl font-semibold text-center mb-16">

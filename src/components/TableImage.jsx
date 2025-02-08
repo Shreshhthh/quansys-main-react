@@ -49,7 +49,7 @@ const TableImage = () => {
     >
       <main className="py-8 px-1 lg:px-4 w-[90%] flex flex-col items-center justify-center">
         <div className="text-center mb-12">
-          <h1 className="text-xl lg:text-2xl font-bold mb-2 mt-6">
+          <h1 className="text-xl lg:text-3xl font-bold mb-4 mt-6">
             Revolutionizing Customer Support <br /> with Cutting-Edge AI
             Solutions
           </h1>
@@ -57,21 +57,21 @@ const TableImage = () => {
 
         <div
           className="bg-white border-gray-700 rounded-2xl shadow-md p-6 flex items-center justify-center flex-col w-[95%] lg:w-[80%] hover:shadow-2xl"
-          data-aos="flip-left"
+          data-aos="flip-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h2
-            className="lg:text-3xl text-xl font-bold mb-4 mt-4 text-center"
-            data-aos="fade-up"
+            className="lg:text-4xl text-xl font-bold mb-5 lg:mt-12 text-center"
+            data-aos="flip-up"
             data-aos-duration="2000"
           >
             Multilingual AI Call Agent
           </h2>
           <p
-            className="text-gray-600 mx-auto mb-5 w-[97%] text-center lg:text-[16px] text-xs"
-            data-aos="zoom-out"
-            data-aos-duration="2000"
+            className="text-gray-600 mx-auto mb-4 w-[97%] text-center lg:text-[18px] text-xs px-5"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
             AI-powered multilingual call agents designed to handle support and
             sales across languages. They integrate seamlessly with your
@@ -83,8 +83,6 @@ const TableImage = () => {
             src="https://www.quansys.ai/wp-content/uploads/2024/12/Screenshot.png"
             alt="table"
             className="w-[97%] border rounded-3xl "
-            data-aos="zoom-in"
-            data-aos-duration="2000"
           />
         </div>
       </main>
@@ -95,21 +93,21 @@ const TableImage = () => {
       >
         <div
           className="bg-white border-gray-700 rounded-2xl shadow-md p-3 flex items-center justify-center flex-col w-[95%] lg:w-[80%] "
-          data-aos="flip-right"
+          data-aos="flip-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h2
-            className="lg:text-3xl text-xl font-bold mb-4 mt-4 mx-2 text-center"
-            data-aos="fade-up"
+            className="lg:text-4xl text-xl font-bold mb-5 lg:mt-12  mx-2 text-center"
+            data-aos="flip-up"
             data-aos-duration="2000"
           >
             Virtual Human AI Agent with Vision
           </h2>
           <p
-            className="text-gray-600 mx-auto w-[97%] text-center lg:text-[16px] text-xs"
-            data-aos="zoom-out"
-            data-aos-duration="2000"
+            className="text-gray-600 mx-auto w-[97%] text-center lg:text-[18px] text-xs px-5"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
             A hyper-realistic virtual human with vision, capable of seeing,
             understanding, and interacting during video calls. It combines
@@ -129,12 +127,11 @@ const TableImage = () => {
             <video
               alt="lisa video"
               className="w-[90%] mx-auto rounded-xl my-6 shadow-md"
-              autoPlay
+              autoPlay={true}
               loop
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              muted
             >
-              <source src="/lisa.mp4" type="video/mp4" />
+              <source src="/lisa.mp4" type="video/mp4" alt="lisa video" />
             </video>
           </div>
         </div>
@@ -143,21 +140,21 @@ const TableImage = () => {
       <main className="py-8 px-1 lg:px-4 w-[90%] flex flex-col items-center justify-center mx-auto">
         <div
           className="bg-white border-gray-700 rounded-2xl shadow-md p-3 flex items-center justify-center flex-col w-[95%] lg:w-[80%] "
-          data-aos="flip-down"
+          data-aos="flip-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h2
-            className="lg:text-3xl text-xl font-bold mb-4 mt-5 mx-2 text-center"
+            className="lg:text-4xl text-xl font-bold mb-5 lg:mt-12  mx-2 text-center"
             data-aos="flip-up"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
           >
             Easy Onboarding Experience
           </h2>
           <p
-            className="text-gray-600 mx-auto w-[97%] text-center lg:text-[16px] text-xs "
-            data-aos="zoom-out"
-            data-aos-duration="2000"
+            className="text-gray-600 mx-auto w-[97%] text-center lg:text-[18px] text-xs px-5"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
             assumenda modi ullam quae, enim ducimus eum dolores temporibus
@@ -205,7 +202,7 @@ const TableImage = () => {
                   onClick={handlePrevious}
                   className="flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors"
                 >
-                  <IoChevronBackCircleOutline className="w-6 h-6" />
+                  <IoChevronBackCircleOutline className="w-7 h-7" />
                 </button>
                 <div className="flex gap-5 px-4 ">
                   {DesktopData.map((item, index) => (
@@ -216,8 +213,8 @@ const TableImage = () => {
                   px-4 py-2 rounded-xl whitespace-nowrap transition-colors font-semibold
                   ${
                     index === activeIndex
-                      ? "bg-blue-50 text-blue-600 font-medium text-lg"
-                      : "text-gray-900 hover:bg-blue-50 hover:text-blue-600 hover:text-lg"
+                      ? "bg-blue-50 text-blue-600 font-medium text-[17px] "
+                      : "text-gray-900 hover:bg-blue-50 hover:text-blue-600 hover:text-[17px]"
                   }
                 `}
                     >
@@ -229,18 +226,14 @@ const TableImage = () => {
                   onClick={handleNext}
                   className="flex items-center justify-center w-10 h-10 rounded-full text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors"
                 >
-                  <IoChevronForwardCircleOutline className="w-6 h-6" />
+                  <IoChevronForwardCircleOutline className="w-7 h-7" />
                 </button>
               </div>
               <div className="w-3xl h-[1px] border border-gray-200 mt-2 mx-auto" />
             </div>
           </div>
 
-          <div
-            className=" border-gray-400 rounded-xl mt-7 mb-7 flex items-center justify-center"
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-          >
+          <div className=" border-gray-400 rounded-xl mt-7 mb-7 flex items-center justify-center">
             <img
               src={DesktopData[activeIndex].url}
               alt=""
