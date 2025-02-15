@@ -35,7 +35,7 @@ const Header = () => {
           <img src="/logo.png" alt="logo" className="w-32" />
         </a>
 
-        <ul className="lg:flex hidden justify-between items-center gap-6">
+        <ul className="lg:flex hidden justify-between items-center gap-10">
           <li className="">
             <a href="#" className="text-white text-sm">
               Home
@@ -64,11 +64,10 @@ const Header = () => {
         </ul>
 
         <div className="flex justify-between items-center gap-2">
-          <div className="flex justify-between items-center bg-white rounded-full w-22 h-8">
-            <button className="text-xs px-2 text-black cursor-pointer animate-bounce">
-              Book a demo
-            </button>
-          </div>
+          <button className=" bg-white text-black px-[10px] py-[6px] rounded-full">
+            Book a demo
+          </button>
+
           <div className="lg:hidden" onClick={setToggleOptions}>
             <HiMiniBars3CenterLeft className="text-white w-7 h-7 cursor-pointer" />
           </div>

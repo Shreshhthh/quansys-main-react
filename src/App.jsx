@@ -7,6 +7,7 @@ import TableImage from "./components/TableImage";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import ProductImages from "./components/ProductImages";
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
       <Header />
       <HeroSection />
       <TableImage />
+      <ProductImages />
       <Features />
       <Testimonials />
       <Footer />

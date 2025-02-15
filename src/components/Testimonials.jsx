@@ -8,7 +8,7 @@ const testimonials = [
     role: "Founder & CEO of 7Stone Finance",
     date: "Nov 20, 2024",
     avatar: "https://quansys.ai/wp-content/uploads/2024/12/111.jpg",
-    logo: "https://www.quansys.ai/wp-content/uploads/2024/12/11.png",
+    logo: "/5-7stone.png",
   },
   {
     text: "Our sales have soared since integrating Quansys AI. The proactive and emotionally intelligent interactions have truly personalized our customer experience, leading to better retention and conversions.",
@@ -16,23 +16,22 @@ const testimonials = [
     role: "Founder & CEO of Omelo",
     date: "Nov 28, 2024",
     avatar: "https://quansys.ai/wp-content/uploads/2024/12/222.jpg",
-    logo: "https://www.quansys.ai/wp-content/uploads/2024/12/22.png",
+    logo: "/6-omelo.png",
   },
 ];
 const Testimonials = () => {
   return (
-    <section className="py-16 px-4" id="testimonial">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12">Testimonials</h1>
+    <section className="py-16 px-4 bg-[#af9f9c]" id="testimonial">
+      <div className="max-w-7xl lg:py-20 mx-auto">
+        <h1 className="text-3xl lg:text-[64px] font-bold text-center mb-12">
+          Testimonials
+        </h1>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mt-15">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl p-4 shadow-lg flex flex-col justify-center gap-4 "
-              data-aos={index % 2 == 0 ? "fade-right" : "fade-left"}
-              data-aos-duration="1500"
-              data-aos-mirror="true"
             >
               {/* Quote mark */}
 
@@ -53,7 +52,11 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <div>
-                  <img src={testimonial.logo} alt="" className="w-40" />
+                  <img
+                    src={testimonial.logo}
+                    alt=""
+                    className="w-40 invert-100"
+                  />
                 </div>
               </div>
 
@@ -69,11 +72,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Testimonial content */}
-                <div
-                  className="max-w-90 p-5 ml-20 flex flex-col items-end"
-                  data-aos="zoom-out"
-                  data-aos-duration="2000"
-                >
+                <div className="max-w-90 p-5 ml-20 flex flex-col items-end">
                   <p className="text-gray-600 lg:text-lg mb-8 leading-relaxed text-center ">
                     {testimonial.text}
                   </p>

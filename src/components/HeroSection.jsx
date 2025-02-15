@@ -2,106 +2,73 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="bg-[url(/hero-image.jpg)] flex justify-center items-center bg-no-repeat bg-cover">
-      <div className="flex justify-center items-center w-[80%] m-auto">
-        <div className="flex items-center justify-between flex-col">
-          <h1
-            className="text-[30px] lg:text-[86px] font-bold text-white text-center lg:px-5 leading-7 lg:leading-[80px] mt-32 lg:mt-56"
-            data-aos="flip-up"
-            data-aos-duration="1000"
-            mirror="true"
-          >
+    <div className="w-full h-[100vh] flex justify-center items-center relative">
+      <div className="absolute top-0 w-full h-[100vh] bg-[rgba(0,0,0,0.3)]" />
+
+      {/* <video
+        src="/bg-video-2.mp4"
+        className="w-full h-[100vh] object-cover"
+        autoPlay
+        loop
+        muted
+      ></video> */}
+
+      <img
+        src="/hero-image.jpg"
+        alt=""
+        className="w-full h-[100vh] object-cover"
+      />
+
+      <div className="absolute top-40 w-[90%] ">
+        <div className="flex justify-between flex-col">
+          <h1 className="text-[40px] lg:text-[130px]  font-bold text-white text-left leading-[50px] lg:leading-[120px] tracking-tight">
             AI Agents Empowering Enterprise Support
           </h1>
-          <div className="w-[22rem] lg:w-[42rem] lg:mt-5 mt-1">
-            <p
-              className="text-center lg:text-[18px] text-[14px] text-white lg:mx-10 mx-5 hover:scale-105"
-              data-aos="flip-down"
-              data-aos-delay="600"
-              mirror="true"
-            >
-              AI call agents for seamless support and sales, offering custom
-              voices and the ability to handle thousands of phone calls
-              simultaneously
+
+          <div className="h-[1px] bg-white w-[32rem] lg:mt-12 mt-5" />
+
+          <div className="w-[22rem] lg:w-[45rem] lg:mt-5 mt-1">
+            <p className="lg:text-[18px] text-[14px] text-white ">
+              AI call agents for seamless support and sales.
             </p>
           </div>
-          <div
-            className="mt-20 px-2"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          >
-            <ul className="grid grid-cols-2 lg:flex lg:gap-12 gap-6 ">
+          <div className="mt-20 mx-auto">
+            <ul className="grid grid-cols-2 lg:flex lg:gap-22 gap-x-10 mx-auto ">
               <li>
-                <img
-                  src="https://quansys.ai/wp-content/uploads/2024/12/1.png"
-                  alt="marg"
-                  className="opacity-65 hover:opacity-100"
-                />
+                <img src="/1-marg.png" alt="marg" className=" w-25 lg:w-35" />
               </li>
               <li>
                 <img
-                  src="https://quansys.ai/wp-content/uploads/2024/12/2.png"
+                  src="/2-pazcare.png"
                   alt="payzcare"
-                  className="opacity-65 hover:opacity-100"
+                  className=" w-25 lg:w-35"
                 />
               </li>
               <li>
                 <img
-                  src="https://quansys.ai/wp-content/uploads/2024/12/3.png"
+                  src="/3-ayushpay.png"
                   alt="ayushpay"
-                  className="opacity-65 hover:opacity-100"
+                  className=" w-25 lg:w-35"
                 />
               </li>
               <li>
                 <img
-                  src="https://quansys.ai/wp-content/uploads/2024/12/4.png"
+                  src="/4-intargos.png"
                   alt="intargos"
-                  className="opacity-65 hover:opacity-100"
+                  className=" w-25 lg:w-35"
                 />
               </li>
               <li>
-                <img
-                  src="https://quansys.ai/wp-content/uploads/2024/12/6.png"
-                  alt="omelo"
-                  className="opacity-65 hover:opacity-100"
-                />
+                <img src="/6-omelo.png" alt="omelo" className=" w-25 lg:w-35" />
               </li>
               <li>
                 <img
-                  src="	https://quansys.ai/wp-content/uploads/2024/12/5-1.png"
+                  src="/5-7stone.png"
                   alt="7stone"
-                  className="opacity-65 hover:opacity-100"
+                  className=" w-25 lg:w-35"
                 />
               </li>
             </ul>
-          </div>
-
-          <div className="mt-15 mb-12 flex flex-col items-center justify-center">
-            <p className="text-white lg:text-md">We're part of</p>
-
-            <div
-              className="flex items-center justify-center gap-5 mt-7 "
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              data-aos-mirror="true"
-              data-aos-offset="20"
-            >
-              <img
-                src="https://www.quansys.ai/wp-content/uploads/2024/12/00.png"
-                alt="amazon"
-                className="w-20 lg:w-44"
-              />
-              <img
-                src="https://www.quansys.ai/wp-content/uploads/2024/12/11-1.png"
-                alt="amazon"
-                className="w-20 lg:w-44"
-              />
-              <img
-                src="https://www.quansys.ai/wp-content/uploads/2024/12/33.png"
-                alt="amazon"
-                className="w-20 lg:w-44"
-              />
-            </div>
           </div>
         </div>
       </div>
