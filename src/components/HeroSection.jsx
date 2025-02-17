@@ -31,41 +31,44 @@ const HeroSection = () => {
             <p className="lg:text-[18px] text-[14px] text-white ">
               AI call agents for seamless support and sales.
             </p>
+            <button className=" bg-white mt-5 text-black px-[9px] py-[5px] rounded-full text-[14px] cursor-pointer">
+              Book a demo
+            </button>
           </div>
-          <div className="mt-20 mx-auto">
+          <div className="mt-14 mx-auto">
             <ul className="grid grid-cols-2 lg:flex lg:gap-22 gap-x-10 mx-auto ">
               <li>
-                <img src="/1-marg.png" alt="marg" className=" w-25 lg:w-35" />
+                <img src="/1-marg.png" alt="marg" className=" w-25 lg:w-30" />
               </li>
               <li>
                 <img
                   src="/2-pazcare.png"
                   alt="payzcare"
-                  className=" w-25 lg:w-35"
+                  className="w-25 lg:w-30"
                 />
               </li>
               <li>
                 <img
                   src="/3-ayushpay.png"
                   alt="ayushpay"
-                  className=" w-25 lg:w-35"
+                  className=" w-25 lg:w-30"
                 />
               </li>
               <li>
                 <img
                   src="/4-intargos.png"
                   alt="intargos"
-                  className=" w-25 lg:w-35"
+                  className=" w-25 lg:w-30"
                 />
               </li>
               <li>
-                <img src="/6-omelo.png" alt="omelo" className=" w-25 lg:w-35" />
+                <img src="/6-omelo.png" alt="omelo" className=" w-25 lg:w-30" />
               </li>
               <li>
                 <img
                   src="/5-7stone.png"
                   alt="7stone"
-                  className=" w-25 lg:w-35"
+                  className=" w-25 lg:w-30"
                 />
               </li>
             </ul>

@@ -57,8 +57,36 @@ const TableImage = () => {
             Get Started
           </button>
 
-          <div className="grid lg:grid-cols-2 grid-cols-1 w-[75%] gap-35 mt-10 mx-auto">
-            <div className="flex flex-col">
+          <div className=" w-[75%] gap-35 mt-10 mx-auto">
+            <div className="lg:flex flex-cols w-full items-center justify-center gap-25">
+              <video
+                alt="lisa video"
+                className="rounded-2xl lg:w-[40%] lg:h-[40%]"
+                autoPlay={true}
+                loop={true}
+                muted={muteVideo}
+              >
+                <source src="/lisa.mp4" type="video/mp4" alt="lisa video" />
+              </video>
+              <div className="">
+                <div className="flex mt-5 ">
+                  <h1 className="font-bold lg:text-3xl text-2xl">Lisa</h1>
+                  <h1 className="ml-1 font-bold lg:text-3xl text-2xl opacity-30 ">
+                    - AI Call Agent
+                  </h1>
+                </div>
+
+                <div className="h-[1px] w-full bg-black mt-3" />
+
+                <p className="mt-3 text-gray-500">
+                  {" "}
+                  A hyper-realistic virtual human with vision, capable of
+                  seeing, understanding, and interacting during video calls.
+                </p>
+              </div>
+            </div>
+
+            {/* <div className="flex flex-col ">
               <video
                 alt="lisa video"
                 className="rounded-2xl"
@@ -68,7 +96,6 @@ const TableImage = () => {
               >
                 <source src="/lisa.mp4" type="video/mp4" alt="lisa video" />
               </video>
-
               <div className="flex mt-5">
                 <h1 className="font-bold text-3xl">Lisa</h1>
                 <h1 className="ml-1 font-bold text-3xl opacity-30">
@@ -83,33 +110,7 @@ const TableImage = () => {
                 A hyper-realistic virtual human with vision, capable of seeing,
                 understanding, and interacting during video calls.
               </p>
-            </div>
-
-            <div className="flex flex-col ">
-              <video
-                alt="lisa video"
-                className="rounded-2xl"
-                autoPlay={true}
-                loop={true}
-                muted={muteVideo}
-              >
-                <source src="/lisa.mp4" type="video/mp4" alt="lisa video" />
-              </video>
-              <div className="flex mt-5">
-                <h1 className="font-bold text-3xl">Lisa</h1>
-                <h1 className="ml-1 font-bold text-3xl opacity-30">
-                  - AI Call Agent
-                </h1>
-              </div>
-
-              <div className="h-[1px] w-full bg-black mt-3" />
-
-              <p className="mt-3 text-gray-500">
-                {" "}
-                A hyper-realistic virtual human with vision, capable of seeing,
-                understanding, and interacting during video calls.
-              </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

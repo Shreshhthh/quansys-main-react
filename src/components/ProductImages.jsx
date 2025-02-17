@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
-import { GoDotFill } from "react-icons/go";
-import { RxShare2 } from "react-icons/rx";
 import { IoChevronForwardCircleOutline } from "react-icons/io5";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
-import { IoMic } from "react-icons/io5";
-import { FaChevronDown } from "react-icons/fa";
-import { IoMicOff } from "react-icons/io5";
 
 const DesktopData = [
   {
@@ -49,7 +44,7 @@ const ProductImages = () => {
   };
 
   return (
-    <div className="mt-25 bg-[#FEF3E2]">
+    <div className=" bg-[#FEF3E2]">
       <main className=" flex flex-col items-center justify-center">
         <div className="mt-25 flex items-center justify-center flex-col ">
           <h2 className="lg:text-[64px] text-2xl font-bold text-center">
@@ -63,6 +58,7 @@ const ProductImages = () => {
 
           <div className="relative max-w-4xl mx-auto mt-10">
             {/* Mobile View */}
+
             <div className="flex items-center justify-between gap-5 lg:hidden md:w-[30rem] ">
               <button
                 onClick={handlePrevious}

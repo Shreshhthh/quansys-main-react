@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const getUrl = useLocation().pathname;
+  const navigate = useNavigate();
+
   //change nav color while scrolling
   const [colorWhileScroll, setColorWhileScroll] = useState(false);
   const changeColor = () => {
@@ -27,27 +33,32 @@ const Header = () => {
       className={
         colorWhileScroll
           ? `bg-black fixed top-0 w-full transition-all z-50`
-          : `fixed top-0 w-full  z-50`
+          : `fixed top-0 w-full z-50`
+      }
+      style={
+        getUrl === "/book-a-demo"
+          ? { backgroundColor: "black", color: "white", filter: "invert(1)" }
+          : {}
       }
     >
       <nav className="w-[90%] mx-auto flex justify-between items-center h-16 ">
-        <a href="#">
+        <a href="/">
           <img src="/logo.png" alt="logo" className="w-32" />
         </a>
 
         <ul className="lg:flex hidden justify-between items-center gap-10">
           <li className="">
-            <a href="#" className="text-white text-sm">
+            <Link to="/" className="text-white text-sm">
               Home
-            </a>
+            </Link>
           </li>
           <li className="">
-            <a href="#table-images" className="text-white text-sm">
+            <a href="/#table-images" className="text-white text-sm">
               Phone Call Agent
             </a>
           </li>
           <li className="">
-            <a href="#lisa" className="text-white text-sm">
+            <a href="/#lisa" className="text-white text-sm">
               Virtual Human Agent
             </a>
           </li>
@@ -57,16 +68,19 @@ const Header = () => {
             </a>
           </li>
           <li className="">
-            <a href="#" className="text-white text-sm">
+            <Link to="/book-a-demo" className="text-white text-sm">
               Enterprise
-            </a>
+            </Link>
           </li>
         </ul>
 
         <div className="flex justify-between items-center gap-2">
-          <button className=" bg-white text-black px-[10px] py-[6px] rounded-full">
+          <Link
+            to="/book-a-demo"
+            className=" bg-white text-black px-[10px] py-[6px] rounded-full"
+          >
             Book a demo
-          </button>
+          </Link>
 
           <div className="lg:hidden" onClick={setToggleOptions}>
             <HiMiniBars3CenterLeft className="text-white w-7 h-7 cursor-pointer" />
