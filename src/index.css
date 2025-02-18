@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
+    scroll-behavior: smooth;
   }
 
 
@@ -19,8 +20,48 @@ body{
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   --animate-fade-in: fade-in 2s ease-in-out ;
   --animate-loop-scroll: loop-scroll 10s linear infinite;
-  --breakpoint-lg: 1025px
+  --animate-border-spin: border-spin 3s linear infinite;
 }
+
+@property --border-angle{
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+
+}
+
+/* @layer utilities {
+  .card-wrapper{
+    position: relative;
+    background: linear-gradient(to bottom, #334155, #1e293b);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .card-wrapper::before{
+    background: conic-gradient(
+      rgba(244,114,182,0.4) 0deg,
+      rgba(192,132,252,0.4) 0deg,
+      transparent 80deg,
+    );
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    left: -25%;
+    top: -25%;
+    content: '';
+    animation: border-spin 7s linear infinite;
+  }
+
+  .card-content{
+    position: absolute;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: linear-gradient(to bottom, #1e293b, #0f172a);
+    border-radius: 1rem;
+    top: 1px;
+    left: 1px;
+  }
+} */
 
 
 @keyframes wiggle {
@@ -53,5 +94,10 @@ body{
   to{transform: translate(-100%)}
 }
 
+@keyframes border-spin {
+  to {
+    --border-angle: 360deg;
+  }
+}
 
 

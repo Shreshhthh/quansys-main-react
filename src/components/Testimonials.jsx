@@ -21,7 +21,7 @@ const testimonials = [
 ];
 const Testimonials = () => {
   return (
-    <section className="py-16 px-4 bg-[#af9f9c]" id="testimonial">
+    <section className="py-16 px-4 bg-[#d7cecc] " id="testimonial">
       <div className="max-w-7xl lg:py-20 mx-auto">
         <h1 className="text-3xl lg:text-[64px] font-bold text-center mb-12">
           Testimonials
@@ -83,10 +83,10 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        <div className="lg:flex hidden flex-col items-center justify-center">
+        {/* <div className="lg:flex hidden flex-col items-center justify-center">
           <h1 className="text-3xl font-bold mt-24 mb-5">Our Clients</h1>
           <MarqueeClientSection />
-        </div>
+        </div> */}
       </div>
     </section>
   );

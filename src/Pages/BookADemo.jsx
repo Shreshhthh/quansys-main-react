@@ -7,18 +7,18 @@ const BookADemo = () => {
     <div className="bg-[#2C3930] min-h-[1000px]">
       <Header />
 
-      <div className="flex justify-center items-center pt-20 flex-col">
-        <h1 className="text-[64px] text-white font-bold">
+      <div className=" flex justify-center items-center pt-20 flex-col">
+        <h1 className="lg:text-[64px] text-[30px] text-white font-bold text-center">
           Book a Personalized Demo!
         </h1>
         <p className="text-[16px] text-white mt-7 opacity-80 text-center">
           Schedule a product demo with our expert team.
         </p>
 
-        <div className="w-[50%] mt-10 flex justify-center items-center bg-white rounded-2xl">
+        <div className="lg:w-[50%] w-[90%] mt-10 flex justify-center items-center bg-white rounded-2xl">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdfQEEfXHvq51VJRRHTYJuglPl6Ac0JLv0BLvqxMyABAfNhTA/formResponse"
-            frameborder="0"
+            frameBorder="0"
             className="w-[100%] h-[50rem] rounded-2xl"
           ></iframe>
         </div>

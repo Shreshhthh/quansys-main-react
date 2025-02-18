@@ -11,6 +11,9 @@ const Header = () => {
 
   //change nav color while scrolling
   const [colorWhileScroll, setColorWhileScroll] = useState(false);
+  // if (getUrl === "/book-a-demo") {
+  //   () => setColorWhileScroll(true);
+  // }
   const changeColor = () => {
     if (window.scrollY >= 70) {
       setColorWhileScroll(true);
@@ -32,43 +35,50 @@ const Header = () => {
     <div
       className={
         colorWhileScroll
-          ? `bg-black fixed top-0 w-full transition-all z-50`
-          : `fixed top-0 w-full z-50`
+          ? `bg-white text-black fixed top-0 w-full transition-all z-50 font-semibold`
+          : `fixed top-0 w-full z-50 text-white`
       }
       style={
         getUrl === "/book-a-demo"
-          ? { backgroundColor: "black", color: "white", filter: "invert(1)" }
+          ? { backgroundColor: "white", color: "black" }
           : {}
       }
     >
       <nav className="w-[90%] mx-auto flex justify-between items-center h-16 ">
-        <a href="/">
-          <img src="/logo.png" alt="logo" className="w-32" />
-        </a>
+        <img
+          src="/logo.png"
+          alt="logo"
+          className={
+            getUrl === "/book-a-demo" || colorWhileScroll
+              ? "w-32 invert-100 cursor-pointer"
+              : "w-32 cursor-pointer"
+          }
+          onClick={() => navigate("/")}
+        />
 
         <ul className="lg:flex hidden justify-between items-center gap-10">
           <li className="">
-            <Link to="/" className="text-white text-sm">
+            <Link to="/" className=" text-sm">
               Home
             </Link>
           </li>
           <li className="">
-            <a href="/#table-images" className="text-white text-sm">
+            <a href="/#table-images" className=" text-sm">
               Phone Call Agent
             </a>
           </li>
           <li className="">
-            <a href="/#lisa" className="text-white text-sm">
+            <a href="/#lisa" className="text-sm ">
               Virtual Human Agent
             </a>
           </li>
           <li className="">
-            <a href="#features" className="text-white text-sm">
+            <a href="#features" className=" text-sm">
               Features
             </a>
           </li>
           <li className="">
-            <Link to="/book-a-demo" className="text-white text-sm">
+            <Link to="/book-a-demo" className="text-sm">
               Enterprise
             </Link>
           </li>
@@ -77,7 +87,11 @@ const Header = () => {
         <div className="flex justify-between items-center gap-2">
           <Link
             to="/book-a-demo"
-            className=" bg-white text-black px-[10px] py-[6px] rounded-full"
+            className={
+              colorWhileScroll
+                ? "bg-black text-white px-[10px] py-[6px] rounded-full"
+                : "bg-white text-black px-[10px] py-[6px] rounded-full"
+            }
           >
             Book a demo
           </Link>

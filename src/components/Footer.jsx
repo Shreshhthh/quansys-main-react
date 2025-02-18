@@ -1,9 +1,13 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 export default function Footer() {
   return (
-    <div className="mx-auto flex items-center justify-center mt-5">
-      <footer className="py-8 px-4 w-[85%]">
-        <div className="h-[1px] bg-gray-400"></div>
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mt-5">
+    <div className="flex items-center justify-center bg-black h-[250px]">
+      <footer className="w-[90%] lg:mt-10 lg:mb-10">
+        {/* <div className="h-[1px] bg-gray-400"></div> */}
+        {/* <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mt-5">
           <div className="lg:flex hidden items-center gap-6 mb-4 md:mb-0 flex-col">
             <a href="/" className="text-xl font-medium">
               <img src="/logo.png" alt="" className="w-40 invert-[100%]" />
@@ -51,6 +55,68 @@ export default function Footer() {
             <a href="/privacy" className="hover:text-gray-900">
               Privacy
             </a>
+          </div>
+        </div> */}
+
+        <div className="flex items-center justify-between lg:mt-10">
+          <div className="flex items-center gap-10">
+            <img src="/logo-light.png" alt="" className="w-35 invert-[100%]" />
+
+            <ul className="lg:flex hidden justify-between items-center gap-7">
+              <li className="">
+                <Link to="/" className="text-sm font-semibold text-white">
+                  Home
+                </Link>
+              </li>
+              <li className="">
+                <a
+                  href="/#table-images"
+                  className="text-sm font-semibold text-white"
+                >
+                  Phone Call Agent
+                </a>
+              </li>
+              <li className="">
+                <a href="/#lisa" className=" text-sm font-semibold text-white">
+                  Virtual Human Agent
+                </a>
+              </li>
+              <li className="">
+                <a
+                  href="#features"
+                  className=" text-sm font-semibold text-white"
+                >
+                  Features
+                </a>
+              </li>
+              <li className="">
+                <Link
+                  to="/book-a-demo"
+                  className=" text-sm font-semibold text-white"
+                >
+                  Enterprise
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center gap-10 text-black">
+            <FaXTwitter className="w-7 h-7 bg-white p-1 rounded cursor-pointer" />
+            <FaLinkedinIn className="w-7 h-7 bg-white p-1 rounded cursor-pointer" />
+          </div>
+        </div>
+        <div className="h-[1px] bg-gray-700 w-full lg:mt-15 mt-7 mb-5 lg:mb-6" />
+
+        <div className="lg:flex flex-col lg:flex-row items-center justify-between">
+          <p className="text-sm font-semibold text-gray-200 text-center">
+            © 2024 Quansys AI. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6 mt-2 lg:mt-0 justify-center">
+            <p className="text-white text-sm cursor-pointer hover:underline hover:text-gray-400">
+              Privacy Policy
+            </p>
+            <p className="text-white text-sm cursor-pointer hover:underline hover:text-gray-400 ">
+              Terms of service
+            </p>
           </div>
         </div>
       </footer>

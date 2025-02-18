@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DesktopData = [
   {
@@ -24,27 +25,13 @@ const DesktopData = [
 ];
 
 const TableImage = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handlePrevious = () => {
-    setActiveIndex((current) =>
-      current > 0 ? current - 1 : DesktopData.length - 1
-    );
-  };
-
-  const [muteVideo, setMuteVideo] = useState(true);
-
-  const handleNext = () => {
-    setActiveIndex((current) =>
-      current < DesktopData.length - 1 ? current + 1 : 0
-    );
-  };
+  const navigate = useNavigate();
 
   return (
     <div className="w-full mt-25 mb-15" id="table-images">
       <main className="flex flex-col items-center justify-center " id="lisa">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="lg:text-[64px] text-2xl font-bold text-center">
+          <h2 className="lg:text-[64px] text-3xl font-bold text-center">
             Virtual Human AI Agent
           </h2>
           <p className="text-gray-500 mx-auto lg:w-[40%] w-[90%] text-center px-5">
@@ -53,7 +40,10 @@ const TableImage = () => {
             lifelike face and voice with the ability to connect to enterprise
             systems, delivering intelligent, action-driven support in real time.
           </p>
-          <button className="mt-5 bg-black text-white px-[10px] py-[6px] rounded-full">
+          <button
+            className="mt-5 bg-black text-white px-[10px] py-[6px] rounded-full"
+            onClick={() => navigate("/book-a-demo")}
+          >
             Get Started
           </button>
 
@@ -61,10 +51,10 @@ const TableImage = () => {
             <div className="lg:flex flex-cols w-full items-center justify-center gap-25">
               <video
                 alt="lisa video"
-                className="rounded-2xl lg:w-[40%] lg:h-[40%]"
+                className="rounded-2xl lg:w-[45%] lg:h-[50%]"
                 autoPlay={true}
                 loop={true}
-                muted={muteVideo}
+                muted={true}
               >
                 <source src="/lisa.mp4" type="video/mp4" alt="lisa video" />
               </video>
@@ -76,7 +66,7 @@ const TableImage = () => {
                   </h1>
                 </div>
 
-                <div className="h-[1px] w-full bg-black mt-3" />
+                <div className="h-[1px] w-full bg-gray-500 mt-3" />
 
                 <p className="mt-3 text-gray-500">
                   {" "}
