@@ -7,46 +7,51 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Features = () => {
-  const DesktopData = [
+  const FeaturesData = [
     {
-      name: "Dashboard",
-      url: "/1-Dashbaord.png",
+      name: "24/7 Availability",
+      url: "/24x7-support.jpg",
+      para: "Round-the-clock access ensures uninterrupted service and support.",
     },
     {
-      name: "Onboarding",
-      url: "/2-Onboarding.png",
+      name: "Increased Reach",
+      url: "/reach-2.jpg",
+      para: "Expand your audience with wider accessibility and engagement.",
     },
     {
-      name: "Import",
-      url: "/3-Import.png",
+      name: "Improve Efficiency",
+      url: "/efficiency.jpg",
+      para: "Streamline processes, automate tasks, and boost overall productivity.",
     },
     {
-      name: "Outbound Calls",
-      url: "/4-Outbound.png",
+      name: "Intergration with existing systems",
+      url: "/intergration.jpg",
+      para: "Seamlessly connect for a unified workflow and data synchronization.",
     },
     {
-      name: "Insights",
-      url: "/5-Insights.png",
-    },
-  ];
-  const featuresList = [
-    {
-      left: [
-        "Multiple Voices",
-        "Hyper Realistic Voice",
-        "Fine tune LLM",
-        "Call Transcriptions",
-        "User satisfaction report",
-      ],
-      right: [
-        "Self-Improving AI Agents",
-        "Voice cloning",
-        "Minimum Latency",
-        "Call Insights",
-        "Users sentiment Analysis",
-      ],
+      name: "Insights and Analytics",
+      url: "/analytics.png",
+      para: "Data-driven decisions with comprehensive performance tracking.",
     },
   ];
+  // const featuresList = [
+  //   {
+  //     left: [
+  //       "Multiple Voices",
+  //       "Hyper Realistic Voice",
+  //       "Fine tune LLM",
+  //       "Call Transcriptions",
+  //       "User satisfaction report",
+  //     ],
+  //     right: [
+  //       "Self-Improving AI Agents",
+  //       "Voice cloning",
+  //       "Minimum Latency",
+  //       "Call Insights",
+  //       "Users sentiment Analysis",
+  //     ],
+  //   },
+  // ];
 
   const [activeIndex, setActiveIndex] = useState(2);
 
@@ -58,7 +63,8 @@ const Features = () => {
     centerMode: true,
     arrows: false,
     focusOnSelect: true,
-
+    autoplay: true,
+    autoplaySpeed: 3000,
     beforeChange: (current, next) => setActiveIndex(next),
     responsive: [
       {
@@ -69,12 +75,13 @@ const Features = () => {
           infinite: true,
         },
       },
+
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -92,6 +99,14 @@ const Features = () => {
   const next = () => {
     sliderRef.slickNext();
   };
+
+  const play = () => {
+    sliderRef.slickPlay();
+  };
+
+  useEffect(() => {
+    play();
+  }, []);
 
   return (
     <div className="py-25 bg-[#DCD7C9]" id="features">
@@ -119,23 +134,26 @@ const Features = () => {
             sliderRef = slider;
           }}
         >
-          {DesktopData.map((item, index) => (
-            <div key={index} className="flex flex-col">
+          {FeaturesData.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col rounded-2xl cursor-pointer w-[20]"
+            >
               <img
                 src={item.url}
                 alt={item.name}
                 className={
                   index === activeIndex
-                    ? "w-[35rem] h-[20rem] opacity-100 rounded-4xl scroll-smooth scale-102 ease-in-out duration-500"
-                    : " w-[35rem] h-[20rem] opacity-50 rounded-4xl scroll-smooth ease-in-out duration-500"
+                    ? "md:max-lg:h-[15rem] w-[29rem] h-[20rem] opacity-100 p-3 rounded-3xl scroll-smooth scale-102 ease-in-out duration-500 scale-103"
+                    : "md:max-lg:h-[15rem]  w-[29rem] h-[20rem] opacity-50 p-3 rounded-3xl scroll-smooth ease-in-out duration-500 scale-97"
                 }
               ></img>
 
               <h1
                 className={
                   activeIndex === index
-                    ? "ml-5 text-2xl font-semibold opacity-100 ease-in-out duration-500"
-                    : "ml-5 text-2xl font-semibold opacity-50 ease-in-out duration-500"
+                    ? "ml-5 text-2xl mt-3 font-semibold opacity-100 ease-in-out duration-500"
+                    : "ml-5 text-2xl mt-3 font-semibold opacity-50 ease-in-out duration-500"
                 }
               >
                 {item.name}
@@ -147,15 +165,14 @@ const Features = () => {
                     : "text-[#6e675f] ml-5 mt-1 opacity-50 ease-in-out duration-500"
                 }
               >
-                ashdjkhsaj sahdjksa jkhsdajk kjhhsajkd jhsajd jhasjkdh lnnsmasj
-                kabsddjk sjk
+                {item.para}
               </p>
             </div>
           ))}
         </Slider>
 
         <div className="hidden lg:flex justify-center gap-2 mt-20">
-          {Array.from({ length: DesktopData.length }, (_, index) => (
+          {Array.from({ length: FeaturesData.length }, (_, index) => (
             <div
               key={index}
               className={`w-2 h-2 rounded-full cursor-pointer ${

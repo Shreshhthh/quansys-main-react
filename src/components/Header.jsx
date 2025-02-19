@@ -97,7 +97,7 @@ const Header = () => {
           </Link>
 
           <div className="lg:hidden" onClick={setToggleOptions}>
-            <HiMiniBars3CenterLeft className="text-white w-7 h-7 cursor-pointer" />
+            <HiMiniBars3CenterLeft className=" w-7 h-7 cursor-pointer" />
           </div>
         </div>
       </nav>
@@ -107,18 +107,47 @@ const Header = () => {
             className="flex justify-end "
             onClick={() => setToggleOptions(!toggleOptions)}
           >
-            <RxCross2 className="w-10 h-10 mr-4 mt-4" />
+            <RxCross2 className="w-10 h-10 mr-4 mt-4 text-black" />
           </p>
-          <ul className="flex justify-center items-center flex-col gap-3 mt-20">
-            <li className="text-lg">Home</li>
-            <li className="text-lg">Phone Call Agent</li>
-            <li className="text-lg">Virtual Human Agent</li>
-            <li className="text-lg">Features</li>
-            <li className="text-lg">Enterprise</li>
+          <ul className="flex justify-center items-center flex-col gap-3 mt-20 gap-y-10">
+            <li
+              className="text-lg text-black font-bold"
+              onClick={() => setToggleOptions(!toggleOptions)}
+            >
+              <Link to="/">Home</Link>
+            </li>
+            <li className="text-lg text-black font-bold">
+              <a href="/#lisa" onClick={() => setToggleOptions(!toggleOptions)}>
+                Phone Call Agent
+              </a>
+            </li>
+            <li className="text-lg text-black font-bold">
+              <a href="/#lisa" onClick={() => setToggleOptions(!toggleOptions)}>
+                Virtual Human Agent
+              </a>
+            </li>
+            <li
+              className="text-lg text-black font-bold"
+              onClick={() => setToggleOptions(!toggleOptions)}
+            >
+              {" "}
+              <a href="#features">Features</a>
+            </li>
+            <li
+              className="text-lg text-black font-bold"
+              onClick={() => navigate("/book-a-demo")}
+            >
+              Enterprise
+            </li>
           </ul>
 
           <div className="bg-black h-10 rounded-full w-[80%] flex items-center justify-center mt-48 mx-auto">
-            <button className="text-white">Book A Demo</button>
+            <button
+              className="text-white"
+              onClick={() => navigate("/book-a-demo")}
+            >
+              Book A Demo
+            </button>
           </div>
         </div>
       )}

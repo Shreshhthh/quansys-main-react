@@ -22,7 +22,7 @@ const SampleVideos = () => {
       <div className="w-[90%] lg:h-[65vh] bg-[#d7cecc] rounded-3xl lg:flex justify-between items-center mx-auto p-7 ">
         <div className="lg:w-[50%] lg:h-[90%] my-auto pt-10">
           <h1 className="lg:text-[73px] text-[32px] leading-[35px] font-bold lg:leading-18 lg:w-[75%]">
-            Listen for yourself.
+            Experience it firsthand.
           </h1>
           <p className="text-[#6b6766] text-sm lg:text-[16px] lg:w-[90%] lg:mt-7 mt-3">
             {" "}

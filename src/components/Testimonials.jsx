@@ -89,6 +89,42 @@ const Testimonials = () => {
         </div> */}
       </div>
     </section>
+
+    // <div className="bg-[#f3f5ff] h-[100vh]">
+    //   <div className="w-[80%] mx-auto pt-20 pb-20">
+    //     <h1 className="text-3xl lg:text-[64px] font-bold text-center mb-12">
+    //       Testimonials
+    //     </h1>
+    //     <div className="flex items-center justify-center gap-x-30">
+    //       {testimonials.map((item, index) => (
+    //         <div className="h-100 w-100 flex item-center justify-center flex-col rounded-2xl">
+    //           <div className="bg-[#eeeeff] flex h-40 items-center justify-center rounded-t-2xl">
+    //             <img src={item.logo} alt="" className="invert-100 w-40 h-13" />
+    //           </div>
+    //           <div className="bg-white rounded-b-2xl h-100">
+    //             <div className=" w-[85%] mx-auto">
+    //               <h3 className="font-semibold text-lg mt-5 text-[#1c224f]">
+    //                 {item.text}
+    //               </h3>
+    //               <div className="h-[1px] w-full bg-gray-100 opacity-100 mt-5 mb-7" />
+    //               <div className="flex gap-x-5 ">
+    //                 <img
+    //                   src={item.avatar}
+    //                   alt=""
+    //                   className="rounded-full w-12 h-12"
+    //                 />
+    //                 <div className="">
+    //                   <h3>{item.author}</h3>
+    //                   <p>{item.role}</p>
+    //                 </div>
+    //               </div>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
