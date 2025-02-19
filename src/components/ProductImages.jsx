@@ -49,7 +49,7 @@ const ProductImages = () => {
       <div className=" flex flex-col ">
         <div className="flex items-center justify-center flex-col ">
           <h2 className="lg:text-[64px] text-3xl font-bold text-center text-[#859295] lg:w-[60%] w-[90%] lg:leading-[65px]">
-            Seamless Intergration with your existing systems
+            Seamless Integration with your existing systems
           </h2>
 
           <p className="mt-5 lg:w-[50%] w-[90%] text-center text-[#859295]">
