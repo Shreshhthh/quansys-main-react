@@ -71,7 +71,7 @@ const ProductImages = () => {
         <div className="w-[95%] mx-auto">
           <div className="flex flex-col pt-[60px]">
             <h1 className="lg:text-[45px] text-3xl sm:max-md:mx-auto font-bold">
-              Smooth Onboarding Journey.
+              Smooth Onboarding Journey
             </h1>
             <p className="text-[16px] text-[#7f7a77] mt-1">
               Our smooth onboarding journey reflects our commitment to

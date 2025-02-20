@@ -144,8 +144,8 @@ const Features = () => {
                 alt={item.name}
                 className={
                   index === activeIndex
-                    ? "md:max-lg:h-[15rem] w-[29rem] h-[20rem] opacity-100 p-3 rounded-3xl scroll-smooth scale-102 ease-in-out duration-500 scale-103"
-                    : "md:max-lg:h-[15rem]  w-[29rem] h-[20rem] opacity-50 p-3 rounded-3xl scroll-smooth ease-in-out duration-500 scale-97"
+                    ? "md:max-lg:h-[15rem] w-[29rem] h-[20rem] opacity-100 p-3 rounded-3xl scroll-smooth "
+                    : "md:max-lg:h-[15rem]  w-[29rem] h-[20rem] opacity-50 p-3 rounded-3xl scroll-smooth "
                 }
               ></img>
 

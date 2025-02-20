@@ -17,7 +17,7 @@ const BookADemo = () => {
 
         <div className="lg:w-[50%] w-[90%] mt-10 flex justify-center items-center bg-white rounded-2xl">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdfQEEfXHvq51VJRRHTYJuglPl6Ac0JLv0BLvqxMyABAfNhTA/formResponse"
+            src="https://forms.gle/dJ3nSySQjHm5e5GM8"
             frameBorder="0"
             className="w-[100%] h-[50rem] rounded-2xl"
           ></iframe>

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-[100vh] flex justify-center items-center relative">
+    <div className="w-full h-1vh flex justify-center items-center relative">
       <div className="absolute top-0 w-full h-[100vh] bg-[rgba(0,0,0,0.3)]" />
 
       {/* <video

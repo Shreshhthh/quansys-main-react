@@ -21,6 +21,7 @@ body{
   --animate-fade-in: fade-in 2s ease-in-out ;
   --animate-loop-scroll: loop-scroll 10s linear infinite;
   --animate-border-spin: border-spin 3s linear infinite;
+  --breakpoint-lg: 1025px;
 }
 
 @property --border-angle{
