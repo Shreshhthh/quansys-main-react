@@ -30,22 +30,22 @@ const TableImage = () => {
   return (
     <div className="w-full mt-25 mb-15" id="table-images">
       <main className="flex flex-col items-center justify-center " id="lisa">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center px-3">
           <h2 className="lg:text-[64px] text-3xl font-bold text-center">
-            Virtual Human AI Agent
+            Multilingual AI Call Agent
           </h2>
-          <p className="text-gray-500 mx-auto lg:w-[40%] w-[90%] text-center px-5">
-            A hyper-realistic virtual human with vision, capable of seeing,
-            understanding, and interacting during video calls. It combines
-            lifelike face and voice with the ability to connect to enterprise
-            systems, delivering intelligent, action-driven support in real time.
+          <p className="text-gray-500 mx-auto lg:w-[40%] w-[90%] text-center px-5 mt-2">
+            A multilingual AI call agent provides seamless communication across
+            languages, enhancing customer experience with automated support and
+            personalized interactions worldwide. It bridges cultural gaps
+            efficiently, ensuring consistent service quality globally.
           </p>
-          <button
+          {/* <button
             className="mt-5 bg-black text-white px-[10px] py-[6px] rounded-full"
             onClick={() => navigate("/book-a-demo")}
           >
             Get Started
-          </button>
+          </button> */}
 
           <div className=" w-[75%] gap-35 mt-10 mx-auto">
             <div className="lg:flex flex-cols w-full items-center justify-center gap-25">
@@ -70,8 +70,9 @@ const TableImage = () => {
 
                 <p className="mt-3 text-gray-500">
                   {" "}
-                  A hyper-realistic virtual human with vision, capable of
-                  seeing, understanding, and interacting during video calls.
+                  A cutting-edge multilingual AI call agent designed to bridge
+                  language gaps seamlessly, provides personalized customer
+                  experiences in multiple languages.
                 </p>
               </div>
             </div>

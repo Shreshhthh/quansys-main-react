@@ -7,16 +7,16 @@ const testimonials = [
     author: "Lovely",
     role: "Founder & CEO of 7Stone Finance",
     date: "Nov 20, 2024",
-    avatar: "https://quansys.ai/wp-content/uploads/2024/12/111.jpg",
+    avatar: "/111.jpg",
     logo: "/5-7stone.png",
   },
   {
-    text: "Our sales have soared since integrating Quansys AI. The proactive and emotionally intelligent interactions have truly personalized our customer experience, leading to better retention and conversions.",
-    author: "Amogh Tiwari",
-    role: "Founder & CEO of Omelo",
-    date: "Nov 28, 2024",
-    avatar: "https://quansys.ai/wp-content/uploads/2024/12/222.jpg",
-    logo: "/6-omelo.png",
+    text: "I was amazed during the Quansys AI demo; the AI voice agents were so real and naturally conversational that I genuinely thought I was speaking to a human, blurring the line between machine and human communication.",
+    author: "Akash Gupta",
+    role: "Co-Founder & CEO of Zypp Electric",
+    date: "Feb 17, 2024",
+    avatar: "/akash.png",
+    logo: "/Zypp-Electric.png",
   },
 ];
 const Testimonials = () => {
@@ -55,7 +55,9 @@ const Testimonials = () => {
                   <img
                     src={testimonial.logo}
                     alt=""
-                    className="w-40 invert-100"
+                    className={
+                      index === 1 ? "max-w-30 " : "invert-100 max-w-30 "
+                    }
                   />
                 </div>
               </div>
@@ -73,7 +75,7 @@ const Testimonials = () => {
 
                 {/* Testimonial content */}
                 <div className="max-w-90 p-5 ml-20 flex flex-col items-end">
-                  <p className="text-gray-600 lg:text-lg mb-8 leading-relaxed text-center ">
+                  <p className="text-gray-600 lg:text-lg mb-8 leading-relaxed text-center">
                     {testimonial.text}
                   </p>
 

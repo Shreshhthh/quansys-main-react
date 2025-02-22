@@ -69,11 +69,11 @@ const ProductImages = () => {
 
       <div className="w-[90%] mx-auto bg-[#DCD7C9] rounded-3xl mt-20 mb-20">
         <div className="w-[95%] mx-auto">
-          <div className="flex flex-col pt-[60px]">
-            <h1 className="lg:text-[45px] text-3xl sm:max-md:mx-auto font-bold">
+          <div className="flex flex-col pt-[60px] px-3">
+            <h1 className="lg:text-[45px] text-3xl sm:max-md:mx-auto font-bold ">
               Smooth Onboarding Journey
             </h1>
-            <p className="text-[16px] text-[#7f7a77] mt-1">
+            <p className="text-[16px] text-[#7f7a77] mt-1 ">
               Our smooth onboarding journey reflects our commitment to
               efficiency and excellence.
             </p>
@@ -128,9 +128,9 @@ const ProductImages = () => {
           <div className="w-[95%] mx-auto mt-5">
             <div className=" mx-auto pb-10">
               {DesktopData.map((item, index) => (
-                <div className="mt-7" key={index}>
+                <div className="px-3 mt-7" key={index}>
                   <h1 className="text-xl font-semibold">{item.name}</h1>
-                  <p className="text-xs mt-1 text-[#7f7a77]">{item.para}</p>
+                  <p className="mt-1 text-[#7f7a77]">{item.para}</p>
                   <img
                     src={item.url}
                     alt=""

@@ -99,9 +99,14 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
           <div className="flex items-center gap-10 text-black">
-            <FaXTwitter className="w-7 h-7 bg-white p-1 rounded cursor-pointer" />
-            <FaLinkedinIn className="w-7 h-7 bg-white p-1 rounded cursor-pointer" />
+            <a href="https://x.com/QuansysAI" target="_blank">
+              <FaXTwitter className="w-7 h-7 bg-white p-1 rounded cursor-pointer" />
+            </a>
+            <a href="https://www.linkedin.com/company/Quansys" target="_blank">
+              <FaLinkedinIn className="w-7 h-7 bg-white p-1 rounded cursor-pointer" />
+            </a>
           </div>
         </div>
         <div className="h-[1px] bg-gray-700 w-full lg:mt-15 mt-7 mb-5 lg:mb-6" />

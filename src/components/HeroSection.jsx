@@ -19,18 +19,18 @@ const HeroSection = () => {
 
       <div className="absolute top-40 lg:top-20 md:max-lg:top-10 md:max-lg:mt-[15%] lg:mt-[5%] w-[90%] ">
         <div className="flex justify-between flex-col">
-          <h1 className=" text-[40px] lg:text-[130px] md:max-lg:text-[100px] md:max-lg:leading-[90px] font-bold text-white text-left leading-[50px] lg:leading-[120px] tracking-tight">
+          <h1 className="text-[40px] lg:text-[130px] md:max-lg:text-[100px] md:max-lg:leading-[90px] font-bold text-white lg:text-left text-center leading-[50px] lg:leading-[120px] tracking-tight">
             AI Agents Empowering Enterprise Support
           </h1>
 
-          <div className="h-[1px] bg-white w-[32rem] lg:mt-12 mt-5 md:max-lg:mt-12" />
+          <div className="lg:h-[1px] bg-white w-[32rem] lg:mt-12 mt-5 md:max-lg:mt-12 opacity-30 " />
 
-          <div className="w-[22rem] md:max-lg:w-[30rem] lg:w-[45rem] lg:mt-5 mt-1 md:max-lg:mt-5">
+          <div className="w-[22rem] flex md:max-lg:mx-auto flex-col items-center justify-center text-center lg:items-start md:max-lg:w-[30rem] lg:w-[45rem] lg:mt-5 mt-1 md:max-lg:mt-5">
             <p className="lg:text-[18px] text-[14px] text-white md:max-lg:text-[20px]">
               AI call agents for seamless support and sales.
             </p>
             <button
-              className=" bg-white mt-5 text-black px-[9px] py-[5px] rounded-full text-[14px] cursor-pointer md:max-lg:mt-8 md:max-lg:text-[18px]"
+              className="bg-white mt-5 text-black px-[9px] py-[5px] rounded-full text-[14px] cursor-pointer md:max-lg:mt-8 md:max-lg:text-[18px]"
               onClick={() => navigate("/book-a-demo")}
             >
               Book a demo
